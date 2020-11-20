@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+
+    <title>prueba</title>
+</head>
+
+<body>
+    <aside id="menu-aside">
+        <div class="box">
+
+        </div>
+
+        <button class="accordion">
+            <img src="../imagenes/Icono-1.png" alt="Dashboard">
+            Dashboard
+        </button>
+        <div class="panel">
+            <a href="#">Prueba</a>
+        </div>
+
+        <button class="accordion">
+            <img src="../imagenes/Icono-2.png" alt="tienda">
+            Mi Tienda
+        </button>
+        <div class="panel">
+            <a href="#">Prueba</a>
+        </div>
+
+        <button class="accordion">
+            <img src="../imagenes/Icono-2.png" alt="tienda">
+            Módulos
+        </button>
+        <div class="panel">
+            <a href="#">PIM</a>
+            <a href="#">CMS</a>
+            <a href="#">CRM</a>
+            <a href="#">WMS</a>
+            <a href="#">Marketing</a>
+            <a href="#">Reportes</a>
+            <a href="#">Tutoriales</a>
+            <a href="#">Personalización</a>
+        </div>
+        </style>
+    </aside>
+
+    <!-- Este es el panel de la derecha -->
+    <div class="main-container">
+        <header>
+            <div class="menu">
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <img src="https://www.flaticon.es/svg/static/icons/svg/566/566020.svg" alt="menu">
+                </a>    
+            </div>
+            <img src="https://www.flaticon.es/svg/static/icons/svg/847/847969.svg" alt="perfil">
+            <h3>Perfil</h3>
+        </header>
+
+        <nav>
+
+            <ul>
+                <img src="../imagenes/Icono-2.png" alt="tienda">
+                <li>Mi tienda</li>
+                <li>Productos</li>
+                <li>Agregar producto</li>
+            </ul>
+        </nav>
+
+        <div class="product-container">
+
+            <div class="panel-title">
+                <h4>AGREGAR PRODUCTO</h4>
+            </div>
+            <div class="card-container">
+
+                <div class="title-container">
+                    <h4>Agregar un nuevo producto</h4>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <img src="../imagenes/Icono-4.png" alt="#">
+                        <p>Información de producto ·····</p>
+                    </div>
+                    <div class="step">
+                        <img src="../imagenes/Icono-5.png" alt="#">
+                        <p>Configuración de producto</p>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form action="" id="form">
+                        <div class="form-content">
+                            <div class="form-label">
+                                <label for="fcodigo">Código </label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <input type="text" name="fcodigo" id="fcodigo"
+                                placeholder="Ingrese un nombre de producto" required/>
+                            <div class="form-label">
+                                <label for="furl">URL / SKU</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <input type="text" name="furl" id="furl" placeholder="Ingrese un nombre de producto" required />
+                            <div class="form-label">
+                                <label for="fcategoria">Categoría</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <select name="fcategoria" id="fcategoria" required>
+                                <option disabled selected>Seleccione una categoría</option>
+                                <option selected>Categoria1</option>
+                                <option selected>Categoria2</option>
+                                <option selected>Categoria3</option>
+                                <option selected>Categoria4</option>
+                            </select>
+                            <div class="form-label">
+                                <label for="ffotos">Fotos principales</label>
+                            </div>
+                            <div class="div-fotos" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <span>PNG, JPG - 10MB</span>
+                                <span><b>Arrastrar y soltar archivos aquí o</b></span>
+                                <input type="file" id="ffotos" name="ffotos">
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <div class="form-label">
+                                <label for="fnombre">Nombre</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <input type="text" name="fnombre" id="fnombre"
+                                placeholder="Ingrese un nombre de producto" required />
+                            <div class="form-label">
+                                <label for="flinea">Línea de producto</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <select name="flinea" id="flinea" required>
+                                <option disabled selected>Seleccione una línea</option>
+                                <option selected>línea1</option>
+                                <option selected>línea2</option>
+                                <option selected>línea3</option>
+                                <option selected>línea4</option>
+                            </select>
+                            <div class="form-label">
+                                <label for="fsubcategoria">Línea de producto</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <select name="fsubcategoria" id="fsubcategoria" required>
+                                <option disabled selected>Seleccione una línea</option>
+                                <option selected>línea1</option>
+                                <option selected>línea2</option>
+                                <option selected>línea3</option>
+                                <option selected>línea4</option>
+                            </select>
+                            <div class="form-label">
+                                <label for="fdescripcion">Descripción</label>
+                                <img src="../imagenes/Icono-3.png" alt="signo de admiración">
+                            </div>
+                            <textarea name="fdescripcion" id="fdescripcion" required
+                                placeholder="Ingrese una descripcion para su producto"></textarea>
+                            <div class="form-buttons">
+                                <button>Cancelar</button>
+                                <button type="submit">Continuar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>
